@@ -4,6 +4,4 @@ def call() {
             sh 'ls'
             sh 'pwd'
         }
-    }
-}
 
