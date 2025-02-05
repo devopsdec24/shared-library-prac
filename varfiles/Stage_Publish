@@ -1,8 +1,6 @@
 // vars/publishStage.groovy
 
-stage('publish') { 
-             agent { label 'builder'}
-            steps {
+def call() {
                 sh 'mkdir -p ~/.m2'
                 sh '''
                     echo "<settings>
@@ -17,5 +15,4 @@ stage('publish') {
                     '''
                 sh 'cat ~/.m2/settings.xml'
                 sh 'mvn clean deploy'
-            }    
         }
