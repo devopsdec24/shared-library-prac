@@ -1,4 +1,4 @@
-//vars
+// vars/deployStage.groovy
 
 stage('deploy') {
            agent { label 'deployer'}
