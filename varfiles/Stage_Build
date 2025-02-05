@@ -1,4 +1,5 @@
+// vars/buildStage.groovy
+
 def call() {
-            sh 'ls'
-            sh 'pwd'
+            sh 'mvn clean package'
         }
