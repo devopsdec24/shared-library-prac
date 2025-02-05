@@ -1,3 +1,5 @@
+// vars/publishStage.groovy
+
 stage('publish') { 
              agent { label 'builder'}
             steps {
