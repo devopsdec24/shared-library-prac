@@ -9,7 +9,7 @@ def call(String build_number, String artifactory_ip) {
             sh """
             sudo cp hello-world-war-${build_number}.war /opt/tomcat/apache-tomcat-10.1.34/webapps/
             """
-            sh 'cat /opt/tomcat/apache-tomcat-10.1.34/webapps/hello-world-war-${build_number}.war'
+            sh 'sudo cat /opt/tomcat/apache-tomcat-10.1.34/webapps/hello-world-war-${build_number}.war'
             sh 'sudo bash /opt/tomcat/apache-tomcat-10.1.34/bin/shutdown.sh'
             sh 'sudo bash /opt/tomcat/apache-tomcat-10.1.34/bin/startup.sh'
 }
