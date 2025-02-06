@@ -1,4 +1,4 @@
-//vars/build_stage.groovy
+// vars/build_stage.groovy
 
 def call(){
    sh 'mvn clean package'
